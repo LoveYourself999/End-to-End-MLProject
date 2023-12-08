@@ -13,11 +13,12 @@ To achieve this goal, we employed COVID-19 vaccination and test data as essentia
 The predictions derived from our models play a pivotal role in evaluating the ratio of high-risk patients within hospitals. This metric serves as a valuable tool for other regions, enabling them to predict potential ICU patients based on vaccination data. The insights gained can significantly contribute to governmental decision-making processes, particularly in managing ICU capacity and promoting strategic vaccine distribution. The broader implication of this project extends beyond immediate application, offering a framework for proactive healthcare planning in the context of the ongoing pandemic.
 ## 2. A description of the dataset and 3 graphs of EDAs.
 Fetch data and create target column:
-Load the dataset from github
-Extract data of Canada from row 53301 ~ 54341
-Create a new column "high_risk" by dividing "icu_patients" by "hosp_patients"
-Note that the data has been updated in real-time, so the results and graphs may vary depending on the dataset changes.
-Description of the dataset
+Load the dataset from github: https://github.com/owid/covid-19-data/tree/master/public/data  
+Extract data of Canada from row 53301 ~ 54341  
+Create a new column "high_risk" by dividing "icu_patients" by "hosp_patients"  
+__Note that the data has been updated in real-time, so the results and graphs may vary depending on the dataset changes.__  
+  
+Description of the dataset:
 - total_cases: Total confirmed cases of COVID-19. Counts can include probable cases, where reported.
 - new_cases: New confirmed cases of COVID-19. Counts can include probable cases, where reported. In rare cases where our source reports a negative daily change due to a data correction, we set this metric to NA.
 - new_cases_smoothed: New confirmed cases of COVID-19 (7-day smoothed). Counts can include probable cases, where reported.
@@ -169,3 +170,6 @@ We have run into the following limitations:
 - The first one is data quality and completeness. We know the quality of data is crucial for accurate predictions. But our data comes from the internet which is an open source website. It might have inconsistencies, missing values, or errors which will lower the accuracy of our predictions.
 - The second one is changing pandemic dynamics. The mutations of COVID-19 virus can change rapidly (e.g., new variants of a virus), which might make historical data less relevant for future predictions. 
 - The third one is resource availability. The actual number of ICUs needed can depend on resources like ventilators, medical staff, and space, which might not be adequately captured in the data. Meanwhile, the data may not represent all regions equally. Different countries or areas might have different healthcare capacities and policies affecting ICU needs.
+  
+### Link to the dataset (owid-covid-data.csv)：
+https://github.com/owid/covid-19-data/tree/master/public/data 
