@@ -142,8 +142,6 @@ Since this is a regression task, we choose the model with the lowest MAPE as our
 - MAPE for Decision Tree: 4.317642732746094
 - MAPE for SVM: 21.007464195799287
 
-Since our predicted value falls between 0 and 1, the MAPE is relatively low.
-
 We can conclude that Decision Tree has the lowest MAPE, hence, it is the best algorithm.
 
 ## 5. Three graphs for the best performing algorithm.
