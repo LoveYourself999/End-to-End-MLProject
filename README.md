@@ -12,11 +12,12 @@ To achieve this goal, we employed COVID-19 vaccination and test data as essentia
 - Looking at the Big Picture:
 The predictions derived from our models play a pivotal role in evaluating the ratio of high-risk patients within hospitals. This metric serves as a valuable tool for other regions, enabling them to predict potential ICU patients based on vaccination data. The insights gained can significantly contribute to governmental decision-making processes, particularly in managing ICU capacity and promoting strategic vaccine distribution. The broader implication of this project extends beyond immediate application, offering a framework for proactive healthcare planning in the context of the ongoing pandemic.
 ## 2. A description of the dataset and 3 graphs of EDAs.
-Fetch data and create target column:
-Load the dataset from github: https://github.com/owid/covid-19-data/tree/master/public/data  
-Extract data of Canada from 2020-04-02 to 2022-01-01  
-Create a new column "high_risk" by dividing "icu_patients" by "hosp_patients"  
-__Note that the data has been updated in real-time, so the results and graphs may vary depending on the dataset changes.__  
+- Fetch data and create target column:
+- Load the dataset from github: https://github.com/owid/covid-19-data/tree/master/public/data  
+- Extract data of Canada from 2020-04-02 to 2022-01-01  
+- Create a new column "high_risk" by dividing "icu_patients" by "hosp_patients"  
+
+__Note that the data has been updated in real-time (The row number will be updated), so the results and graphs may vary depending on the dataset changes.__  
   
 Description of the dataset:
 - total_cases: Total confirmed cases of COVID-19. Counts can include probable cases, where reported.
